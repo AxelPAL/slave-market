@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services https://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <defaults public="false" />
+
+        <service id="slave.rent" class="App\Models\RentInterface">
+            <argument>%kernel.project_dir%/public</argument>
+            <argument>%kernel.environment%</argument>
+            <argument>%kernel.project_dir%/var/cache</argument>
+            <tag name="console.command" command="server:run" />
+        </service>
+
+        <service id="slave.catalog" class="App\Models\CatalogInterface">
+            <argument>%kernel.project_dir%/public</argument>
+            <argument>%kernel.environment%</argument>
+            <argument>%kernel.project_dir%/var/cache</argument>
+            <tag name="console.command" command="server:run" />
+        </service>
+    </services>
+</container>

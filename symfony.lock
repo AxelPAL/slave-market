@@ -105,6 +105,9 @@
     "monolog/monolog": {
         "version": "1.24.0"
     },
+    "nesbot/carbon": {
+        "version": "2.19.0"
+    },
     "nikic/php-parser": {
         "version": "v4.2.2"
     },
@@ -131,6 +134,9 @@
     },
     "psr/log": {
         "version": "1.1.0"
+    },
+    "roave/security-advisories": {
+        "version": "dev-master"
     },
     "sensio/framework-extra-bundle": {
         "version": "5.2",

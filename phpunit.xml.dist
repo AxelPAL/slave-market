@@ -17,6 +17,9 @@
         <testsuite name="Project Test Suite">
             <directory>tests</directory>
         </testsuite>
+        <testsuite name="Slave Rent Test Bundle">
+            <directory>src/SlaveRentBundle/Tests</directory>
+        </testsuite>
     </testsuites>
 
     <filter>
